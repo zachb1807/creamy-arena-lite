@@ -73,7 +73,7 @@ func TestSchedulePdfReport(t *testing.T) {
 	match := model.Match{Type: "practice", DisplayName: "1", Time: time.Unix(0, 0), Red1: 1, Red2: 2, Red3: 3,
 		Blue1: 4, Blue2: 5, Blue3: 6, Blue1IsSurrogate: true, Blue2IsSurrogate: true, Blue3IsSurrogate: true}
 	web.arena.Database.CreateMatch(&match)
-	team := model.Team{Id: 254, Name: "NASA", Nickname: "The Cheesy Poofs", City: "San Jose", StateProv: "CA",
+	team := model.Team{Id: 254, Name: "NASA", Nickname: "The Creamy Poofs", City: "San Jose", StateProv: "CA",
 		Country: "USA", RookieYear: 1999, RobotName: "Barrage"}
 	web.arena.Database.CreateTeam(&team)
 
@@ -86,7 +86,7 @@ func TestSchedulePdfReport(t *testing.T) {
 func TestTeamsCsvReport(t *testing.T) {
 	web := setupTestWeb(t)
 
-	team1 := model.Team{Id: 254, Name: "NASA", Nickname: "The Cheesy Poofs", City: "San Jose", StateProv: "CA",
+	team1 := model.Team{Id: 254, Name: "NASA", Nickname: "The Creamy Poofs", City: "San Jose", StateProv: "CA",
 		Country: "USA", RookieYear: 1999, RobotName: "Barrage"}
 	team2 := model.Team{Id: 1114, Name: "GM", Nickname: "Simbotics", City: "St. Catharines", StateProv: "ON",
 		Country: "Canada", RookieYear: 2003, RobotName: "Simbot Evolution"}
@@ -97,7 +97,7 @@ func TestTeamsCsvReport(t *testing.T) {
 	assert.Equal(t, 200, recorder.Code)
 	assert.Equal(t, "text/plain", recorder.Header()["Content-Type"][0])
 	expectedBody := "Number,Name,Nickname,City,StateProv,Country,RookieYear,RobotName,HasConnected\n254,\"NASA\"," +
-		"\"The Cheesy Poofs\",\"San Jose\",\"CA\",\"USA\",1999,\"Barrage\",false\n1114,\"GM\",\"Simbotics\"," +
+		"\"The Creamy Poofs\",\"San Jose\",\"CA\",\"USA\",1999,\"Barrage\",false\n1114,\"GM\",\"Simbotics\"," +
 		"\"St. Catharines\",\"ON\",\"Canada\",2003,\"Simbot Evolution\",false\n\n"
 	assert.Equal(t, expectedBody, recorder.Body.String())
 }
@@ -105,7 +105,7 @@ func TestTeamsCsvReport(t *testing.T) {
 func TestTeamsPdfReport(t *testing.T) {
 	web := setupTestWeb(t)
 
-	team := model.Team{Id: 254, Name: "NASA", Nickname: "The Cheesy Poofs", City: "San Jose", StateProv: "CA",
+	team := model.Team{Id: 254, Name: "NASA", Nickname: "The Creamy Poofs", City: "San Jose", StateProv: "CA",
 		Country: "USA", RookieYear: 1999, RobotName: "Barrage"}
 	web.arena.Database.CreateTeam(&team)
 

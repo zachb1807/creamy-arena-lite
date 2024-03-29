@@ -38,5 +38,5 @@ var constructLowerThird = function(button) {
 
 $(function() {
   // Set up the websocket back to the server.
-  websocket = new CheesyWebsocket("/setup/lower_thirds/websocket", {});
+  websocket = new CreamyWebsocket("/setup/lower_thirds/websocket", {});
 });

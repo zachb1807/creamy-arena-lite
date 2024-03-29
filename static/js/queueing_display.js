@@ -35,7 +35,7 @@ var handleEventStatus = function(data) {
 
 $(function() {
   // Set up the websocket back to the server.
-  websocket = new CheesyWebsocket("/displays/queueing/websocket", {
+  websocket = new CreamyWebsocket("/displays/queueing/websocket", {
     eventStatus: function(event) { handleEventStatus(event.data); },
     matchLoad: function(event) { handleMatchLoad(event.data); },
     matchTime: function(event) { handleMatchTime(event.data); },

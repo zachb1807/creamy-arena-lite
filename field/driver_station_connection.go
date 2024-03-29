@@ -272,12 +272,12 @@ func (dsConn *DriverStationConnection) decodeStatusPacket(data [36]byte) {
 	dsConn.MissedPacketCount = int(data[2]) - dsConn.missedPacketOffset
 }
 
-// Listens for TCP connection requests to Cheesy Arena from driver stations.
+// Listens for TCP connection requests to Creamy Arena from driver stations.
 func (arena *Arena) listenForDriverStations() {
 	l, err := net.Listen("tcp", fmt.Sprintf("%s:%d", network.ServerIpAddress, driverStationTcpListenPort))
 	if err != nil {
 		log.Printf("Error opening driver station TCP socket: %v", err.Error())
-		log.Printf("Change IP address to %s and restart Cheesy Arena to fix.", network.ServerIpAddress)
+		log.Printf("Change IP address to %s and restart Creamy Arena to fix.", network.ServerIpAddress)
 		return
 	}
 	defer l.Close()

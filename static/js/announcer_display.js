@@ -124,7 +124,7 @@ var getRankingText = function(teamId, rankings) {
 
 $(function() {
   // Set up the websocket back to the server.
-  websocket = new CheesyWebsocket("/displays/announcer/websocket", {
+  websocket = new CreamyWebsocket("/displays/announcer/websocket", {
     audienceDisplayMode: function(event) { handleAudienceDisplayMode(event.data); },
     matchLoad: function(event) { handleMatchLoad(event.data); },
     matchTime: function(event) { handleMatchTime(event.data); },

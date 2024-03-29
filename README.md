@@ -1,11 +1,11 @@
-Cheesy Arena Lite [![Build Status](https://github.com/Team254/cheesy-arena-lite/actions/workflows/test.yml/badge.svg)](https://github.com/Team254/cheesy-arena-lite/actions)
+Creamy Arena Lite [![Build Status](https://github.com/Team254/cheesy-arena-lite/actions/workflows/test.yml/badge.svg)](https://github.com/Team254/cheesy-arena-lite/actions)
 ============
 A game-agnostic field management system that just works.
 
-For the game-specific version, see [Cheesy Arena](https://github.com/Team254/cheesy-arena).
+For the game-specific version, see [Creamy Arena](https://github.com/Team254/cheesy-arena).
 
 ## License
-Teams may use Cheesy Arena Lite freely for practice, scrimmages, and off-season events. See [LICENSE](LICENSE) for more details.
+Teams may use Creamy Arena Lite freely for practice, scrimmages, and off-season events. See [LICENSE](LICENSE) for more details.
 
 ## Installing
 **From a pre-built release**
@@ -25,9 +25,9 @@ On recent versions of macOS, you may be prevented from running an app from an un
 
 **IP address configuration**
 
-When running Cheesy Arena Lite on a playing field with robots, set the IP address of the computer running Cheesy Arena Lite to 10.0.100.5. By a convention baked into the FRC Driver Station software, driver stations will broadcast their presence on the network to this hardcoded address so that the FMS does not need to discover them by some other method.
+When running Creamy Arena Lite on a playing field with robots, set the IP address of the computer running Creamy Arena Lite to 10.0.100.5. By a convention baked into the FRC Driver Station software, driver stations will broadcast their presence on the network to this hardcoded address so that the FMS does not need to discover them by some other method.
 
-When running Cheesy Arena Lite without robots for testing or development, any IP address can be used.
+When running Creamy Arena Lite without robots for testing or development, any IP address can be used.
 
 ## Further reading
-Please see the game-specific [Cheesy Arena](https://github.com/Team254/cheesy-arena) README for technical details and acknowledgements.
+Please see the game-specific [Creamy Arena](https://github.com/Team254/cheesy-arena) README for technical details and acknowledgements.

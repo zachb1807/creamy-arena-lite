@@ -329,7 +329,7 @@ $(function() {
   $("[data-toggle=tooltip]").tooltip({"placement": "top"});
 
   // Set up the websocket back to the server.
-  websocket = new CheesyWebsocket("/match_play/websocket", {
+  websocket = new CreamyWebsocket("/match_play/websocket", {
     allianceStationDisplayMode: function(event) { handleAllianceStationDisplayMode(event.data); },
     arenaStatus: function(event) { handleArenaStatus(event.data); },
     audienceDisplayMode: function(event) { handleAudienceDisplayMode(event.data); },

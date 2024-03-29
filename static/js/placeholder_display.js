@@ -15,6 +15,6 @@ $(function() {
   }
 
   // Set up the websocket back to the server.
-  websocket = new CheesyWebsocket("/display/websocket", {
+  websocket = new CreamyWebsocket("/display/websocket", {
   });
 });

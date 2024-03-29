@@ -3,7 +3,7 @@
 //
 // Shared code for initiating websocket connections back to the server for full-duplex communication.
 
-var CheesyWebsocket = function(path, events) {
+var CreamyWebsocket = function(path, events) {
   var that = this;
   var protocol = "ws://";
   if (window.location.protocol === "https:") {

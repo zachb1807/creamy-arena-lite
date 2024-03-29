@@ -78,7 +78,7 @@ func (web *Web) ServeWebInterface(port int) {
 	http.ListenAndServe(fmt.Sprintf(":%d", port), nil)
 }
 
-// Serves the root page of Cheesy Arena.
+// Serves the root page of Creamy Arena.
 func (web *Web) indexHandler(w http.ResponseWriter, r *http.Request) {
 	template, err := web.parseFiles("templates/index.html", "templates/base.html")
 	if err != nil {

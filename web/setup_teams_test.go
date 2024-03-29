@@ -32,7 +32,7 @@ func TestSetupTeams(t *testing.T) {
 		"location": "San Jose, CA, USA",
 		"key": "frc254",
 		"country": "USA",
-		"nickname": "The Cheesy Poofs"
+		"nickname": "The Creamy Poofs"
 	}`
 	teamRobotsBody := `[
 		{
@@ -88,7 +88,7 @@ func TestSetupTeams(t *testing.T) {
 	assert.Equal(t, 303, recorder.Code)
 	recorder = web.getHttpResponse("/setup/teams")
 	assert.Contains(t, recorder.Body.String(), "2 teams")
-	assert.Contains(t, recorder.Body.String(), "The Cheesy Poofs")
+	assert.Contains(t, recorder.Body.String(), "The Creamy Poofs")
 	assert.Contains(t, recorder.Body.String(), "1114")
 
 	// Add another team.
@@ -101,7 +101,7 @@ func TestSetupTeams(t *testing.T) {
 	// Edit a team.
 	recorder = web.getHttpResponse("/setup/teams/254/edit")
 	assert.Equal(t, 200, recorder.Code)
-	assert.Contains(t, recorder.Body.String(), "The Cheesy Poofs")
+	assert.Contains(t, recorder.Body.String(), "The Creamy Poofs")
 	recorder = web.postHttpResponse("/setup/teams/254/edit", "nickname=Teh Chezy Pofs")
 	assert.Equal(t, 303, recorder.Code)
 	recorder = web.getHttpResponse("/setup/teams")
@@ -111,7 +111,7 @@ func TestSetupTeams(t *testing.T) {
 	recorder = web.getHttpResponse("/setup/teams/refresh")
 	assert.Equal(t, 303, recorder.Code)
 	recorder = web.getHttpResponse("/setup/teams")
-	assert.Contains(t, recorder.Body.String(), "The Cheesy Poofs")
+	assert.Contains(t, recorder.Body.String(), "The Creamy Poofs")
 	assert.NotContains(t, recorder.Body.String(), "Teh Chezy Pofs")
 
 	// Delete a team.
@@ -130,26 +130,26 @@ func TestSetupTeams(t *testing.T) {
 func TestSetupTeamsDisallowModification(t *testing.T) {
 	web := setupTestWeb(t)
 
-	web.arena.Database.CreateTeam(&model.Team{Id: 254, Nickname: "The Cheesy Poofs"})
+	web.arena.Database.CreateTeam(&model.Team{Id: 254, Nickname: "The Creamy Poofs"})
 	web.arena.Database.CreateMatch(&model.Match{Type: "qualification"})
 
 	// Disallow adding teams.
 	recorder := web.postHttpResponse("/setup/teams", "teamNumbers=33")
 	assert.Contains(t, recorder.Body.String(), "can't modify")
 	assert.Contains(t, recorder.Body.String(), "1 teams")
-	assert.Contains(t, recorder.Body.String(), "The Cheesy Poofs")
+	assert.Contains(t, recorder.Body.String(), "The Creamy Poofs")
 
 	// Disallow deleting team.
 	recorder = web.postHttpResponse("/setup/teams/254/delete", "")
 	assert.Contains(t, recorder.Body.String(), "can't modify")
 	assert.Contains(t, recorder.Body.String(), "1 teams")
-	assert.Contains(t, recorder.Body.String(), "The Cheesy Poofs")
+	assert.Contains(t, recorder.Body.String(), "The Creamy Poofs")
 
 	// Disallow clearing all teams.
 	recorder = web.postHttpResponse("/setup/teams/clear", "")
 	assert.Contains(t, recorder.Body.String(), "can't modify")
 	assert.Contains(t, recorder.Body.String(), "1 teams")
-	assert.Contains(t, recorder.Body.String(), "The Cheesy Poofs")
+	assert.Contains(t, recorder.Body.String(), "The Creamy Poofs")
 
 	// Allow editing a team.
 	recorder = web.postHttpResponse("/setup/teams/254/edit", "nickname=Teh Chezy Pofs")

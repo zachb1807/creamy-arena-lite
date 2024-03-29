@@ -29,7 +29,7 @@ func TestTableSingleCrud(t *testing.T) {
 	}
 
 	// Test initial create and then read back.
-	record := validRecord{IntData: 254, StringData: "The Cheesy Poofs"}
+	record := validRecord{IntData: 254, StringData: "The Creamy Poofs"}
 	if assert.Nil(t, table.create(&record)) {
 		assert.Equal(t, 1, record.Id)
 	}
@@ -98,7 +98,7 @@ func TestTableWithManualId(t *testing.T) {
 	}
 
 	// Test initial create and then read back.
-	record := manualIdRecord{Id: 254, StringData: "The Cheesy Poofs"}
+	record := manualIdRecord{Id: 254, StringData: "The Creamy Poofs"}
 	if assert.Nil(t, table.create(&record)) {
 		assert.Equal(t, 254, record.Id)
 	}

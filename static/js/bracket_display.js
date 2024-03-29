@@ -12,7 +12,7 @@ const handleMatchLoad = function(data) {
 
 $(function() {
   // Set up the websocket back to the server.
-  websocket = new CheesyWebsocket("/displays/bracket/websocket", {
+  websocket = new CreamyWebsocket("/displays/bracket/websocket", {
     matchLoad: function(event) { handleMatchLoad(event.data); },
   });
 });

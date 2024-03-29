@@ -131,7 +131,7 @@ $(function() {
   station = urlParams.get("station");
 
   // Set up the websocket back to the server.
-  websocket = new CheesyWebsocket("/displays/alliance_station/websocket", {
+  websocket = new CreamyWebsocket("/displays/alliance_station/websocket", {
     allianceStationDisplayMode: function(event) { handleAllianceStationDisplayMode(event.data); },
     arenaStatus: function(event) { handleArenaStatus(event.data); },
     matchLoad: function(event) { handleMatchLoad(event.data); },

@@ -159,7 +159,7 @@ $(function() {
   $(".fta-dependent").attr("data-fta", urlParams.get("fta"));
 
   // Set up the websocket back to the server.
-  websocket = new CheesyWebsocket("/displays/field_monitor/websocket", {
+  websocket = new CreamyWebsocket("/displays/field_monitor/websocket", {
     arenaStatus: function(event) { handleArenaStatus(event.data); },
     eventStatus: function(event) { handleEventStatus(event.data); },
   });

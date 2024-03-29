@@ -656,7 +656,7 @@ $(function() {
   }
 
   // Set up the websocket back to the server.
-  websocket = new CheesyWebsocket("/displays/audience/websocket", {
+  websocket = new CreamyWebsocket("/displays/audience/websocket", {
     allianceSelection: function(event) { handleAllianceSelection(event.data); },
     audienceDisplayMode: function(event) { handleAudienceDisplayMode(event.data); },
     lowerThird: function(event) { handleLowerThird(event.data); },
