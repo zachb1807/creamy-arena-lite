@@ -1,8 +1,8 @@
-Creamy Arena Lite [![Build Status](https://github.com/zachb1807/creamy-arena-lite/actions/workflows/test.yml/badge.svg)](https://github.com/zachb1807/creamy-arena-lite/actions)
+Creamy Arena Lite
 ============
 A better version of the game-agnostic field management system that just works.
 
-For the game-specific version, see [Cheesy Arena](https://github.com/zachb1807/cheesy-arena).
+For the game-specific version, see [Cheesy Arena](https://github.com/Team254/cheesy-arena).
 
 ## License
 Teams may use Creamy Arena Lite freely for practice, scrimmages, and off-season events. See [LICENSE](LICENSE) for more details.
