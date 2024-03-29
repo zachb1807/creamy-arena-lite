@@ -7,7 +7,7 @@ package web
 
 import (
 	"fmt"
-	"github.com/Team254/cheesy-arena-lite/model"
+	"github.com/zachb1807/creamy-arena-lite/model"
 	"github.com/google/uuid"
 	"net/http"
 	"net/url"

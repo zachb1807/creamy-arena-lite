@@ -4,7 +4,7 @@
 package bracket
 
 import (
-	"github.com/Team254/cheesy-arena-lite/tournament"
+	"github.com/zachb1807/creamy-arena-lite/tournament"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

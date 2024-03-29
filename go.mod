@@ -1,4 +1,4 @@
-module github.com/Team254/cheesy-arena-lite
+module github.com/zachb1807/creamy-arena-lite
 
 go 1.18
 

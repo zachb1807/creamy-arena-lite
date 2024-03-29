@@ -6,7 +6,7 @@
 package model
 
 import (
-	"github.com/Team254/cheesy-arena-lite/game"
+	"github.com/zachb1807/creamy-arena-lite/game"
 	"sort"
 	"strings"
 	"time"

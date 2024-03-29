@@ -7,8 +7,8 @@ package web
 
 import (
 	"fmt"
-	"github.com/Team254/cheesy-arena-lite/model"
-	"github.com/Team254/cheesy-arena-lite/websocket"
+	"github.com/zachb1807/creamy-arena-lite/model"
+	"github.com/zachb1807/creamy-arena-lite/websocket"
 	"github.com/mitchellh/mapstructure"
 	"io"
 	"log"

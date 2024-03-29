@@ -7,12 +7,12 @@ package web
 
 import (
 	"fmt"
-	"github.com/Team254/cheesy-arena-lite/bracket"
-	"github.com/Team254/cheesy-arena-lite/field"
-	"github.com/Team254/cheesy-arena-lite/game"
-	"github.com/Team254/cheesy-arena-lite/model"
-	"github.com/Team254/cheesy-arena-lite/tournament"
-	"github.com/Team254/cheesy-arena-lite/websocket"
+	"github.com/zachb1807/creamy-arena-lite/bracket"
+	"github.com/zachb1807/creamy-arena-lite/field"
+	"github.com/zachb1807/creamy-arena-lite/game"
+	"github.com/zachb1807/creamy-arena-lite/model"
+	"github.com/zachb1807/creamy-arena-lite/tournament"
+	"github.com/zachb1807/creamy-arena-lite/websocket"
 	"github.com/gorilla/mux"
 	"github.com/mitchellh/mapstructure"
 	"io"

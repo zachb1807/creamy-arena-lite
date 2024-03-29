@@ -4,7 +4,7 @@
 package web
 
 import (
-	"github.com/Team254/cheesy-arena-lite/model"
+	"github.com/zachb1807/creamy-arena-lite/model"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

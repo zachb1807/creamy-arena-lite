@@ -1,8 +1,8 @@
-Creamy Arena Lite [![Build Status](https://github.com/Team254/cheesy-arena-lite/actions/workflows/test.yml/badge.svg)](https://github.com/Team254/cheesy-arena-lite/actions)
+Creamy Arena Lite [![Build Status](https://github.com/zachb1807/creamy-arena-lite/actions/workflows/test.yml/badge.svg)](https://github.com/zachb1807/creamy-arena-lite/actions)
 ============
 A better version of the game-agnostic field management system that just works.
 
-For the game-specific version, see [Cheesy Arena](https://github.com/Team254/cheesy-arena).
+For the game-specific version, see [Cheesy Arena](https://github.com/zachb1807/cheesy-arena).
 
 ## License
 Teams may use Creamy Arena Lite freely for practice, scrimmages, and off-season events. See [LICENSE](LICENSE) for more details.
@@ -20,7 +20,7 @@ On recent versions of macOS, you may be prevented from running an app from an un
 1. Clone this GitHub repository to a location of your choice
 1. Navigate to the repository's directory in the terminal
 1. Compile the code with `go build`
-1. Run the `cheesy-arena-lite` or `cheesy-arena-lite.exe` binary
+1. Run the `creamy-arena-lite` or `creamy-arena-lite.exe` binary
 1. Navigate to http://localhost:8080 in your browser (Google Chrome recommended)
 
 **IP address configuration**
@@ -30,4 +30,4 @@ When running Creamy Arena Lite on a playing field with robots, set the IP addres
 When running Creamy Arena Lite without robots for testing or development, any IP address can be used.
 
 ## Further reading
-Please see the game-specific [Cheesy Arena](https://github.com/Team254/cheesy-arena) README for technical details and acknowledgements.
+Please see the game-specific [Cheesy Arena](https://github.com/zachb1807/cheesy-arena) README for technical details and acknowledgements.

@@ -7,8 +7,8 @@
 package main
 
 import (
-	"github.com/Team254/cheesy-arena-lite/field"
-	"github.com/Team254/cheesy-arena-lite/web"
+	"github.com/zachb1807/creamy-arena-lite/field"
+	"github.com/zachb1807/creamy-arena-lite/web"
 	"log"
 )
 

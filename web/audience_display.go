@@ -6,9 +6,9 @@
 package web
 
 import (
-	"github.com/Team254/cheesy-arena-lite/game"
-	"github.com/Team254/cheesy-arena-lite/model"
-	"github.com/Team254/cheesy-arena-lite/websocket"
+	"github.com/zachb1807/creamy-arena-lite/game"
+	"github.com/zachb1807/creamy-arena-lite/model"
+	"github.com/zachb1807/creamy-arena-lite/websocket"
 	"net/http"
 )
 
