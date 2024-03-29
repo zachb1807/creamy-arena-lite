@@ -1,8 +1,8 @@
 Creamy Arena Lite [![Build Status](https://github.com/Team254/cheesy-arena-lite/actions/workflows/test.yml/badge.svg)](https://github.com/Team254/cheesy-arena-lite/actions)
 ============
-A game-agnostic field management system that just works.
+A better version of the game-agnostic field management system that just works.
 
-For the game-specific version, see [Creamy Arena](https://github.com/Team254/cheesy-arena).
+For the game-specific version, see [Cheesy Arena](https://github.com/Team254/cheesy-arena).
 
 ## License
 Teams may use Creamy Arena Lite freely for practice, scrimmages, and off-season events. See [LICENSE](LICENSE) for more details.
@@ -10,7 +10,7 @@ Teams may use Creamy Arena Lite freely for practice, scrimmages, and off-season 
 ## Installing
 **From a pre-built release**
 
-Download the [latest release](https://github.com/Team254/cheesy-arena-lite/releases). Pre-built packages are available for Linux, macOS (x64 and M1), and Windows.
+Download the [latest release](https://github.com/zachb1807/creamy-arena-lite/releases). Pre-built packages are available for Linux, macOS (x64 and M1), and Windows.
 
 On recent versions of macOS, you may be prevented from running an app from an unidentified developer; see [these instructions](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac) on how to bypass the warning.
 
@@ -30,4 +30,4 @@ When running Creamy Arena Lite on a playing field with robots, set the IP addres
 When running Creamy Arena Lite without robots for testing or development, any IP address can be used.
 
 ## Further reading
-Please see the game-specific [Creamy Arena](https://github.com/Team254/cheesy-arena) README for technical details and acknowledgements.
+Please see the game-specific [Cheesy Arena](https://github.com/Team254/cheesy-arena) README for technical details and acknowledgements.
